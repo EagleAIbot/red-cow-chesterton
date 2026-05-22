@@ -780,8 +780,46 @@ section { position: relative; }
   display: flex;
   align-items: stretch;
   justify-content: center;
-  background: #fff;
+  background: var(--c-bone);
 }
+.social__embed--card { background: var(--c-bone); }
+.social__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 3rem 2rem;
+  min-height: 420px;
+}
+.social__card--fb {
+  background:
+    linear-gradient(160deg, rgba(31,45,29,0.92), rgba(31,45,29,0.78)),
+    url('assets/img/pub-2.jpg') center / cover no-repeat;
+  color: var(--c-bone);
+}
+.social__card-kicker {
+  margin: 0 0 0.75rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--c-cognac-2);
+}
+.social__card-title {
+  margin: 0 0 0.85rem;
+  font-family: var(--f-display);
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+.social__card-text {
+  margin: 0 0 1.75rem;
+  max-width: 34ch;
+  color: rgba(251, 247, 238, 0.82);
+  line-height: 1.65;
+  font-size: 0.98rem;
+}
+.social__card-btn { margin-top: auto; }
 .social__embed .fb-page,
 .social__embed .fb-page span,
 .social__embed iframe { width: 100% !important; max-width: 100%; }
