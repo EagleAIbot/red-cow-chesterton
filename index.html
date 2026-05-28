@@ -34,7 +34,6 @@
     "servesCuisine": ["British", "Pub Food"],
     "priceRange": "££",
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "18:00", "closes": "22:00" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "12:00", "closes": "22:00" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "12:00", "closes": "22:00" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "12:00", "closes": "23:00" },
@@ -54,6 +53,7 @@
     </a>
     <nav class="nav__links" aria-label="Primary">
       <a href="#about">Our Story</a>
+      <a href="#events">What's On</a>
       <a href="#menu">Menu</a>
       <a href="#bar">The Bar</a>
       <a href="#visit">Visit</a>
@@ -92,18 +92,20 @@
     </div>
     <div class="hero__marquee" aria-hidden="true">
       <div class="hero__marquee-track">
-        <span>Locally Sourced</span><span>·</span>
+        <span>Quiz Night</span><span>·</span>
+        <span>Burger Night</span><span>·</span>
+        <span>Coffee Afternoon</span><span>·</span>
         <span>Sunday Roasts</span><span>·</span>
         <span>Real Ales</span><span>·</span>
         <span>Dog Friendly</span><span>·</span>
         <span>Beer Garden</span><span>·</span>
-        <span>Open Fires</span><span>·</span>
-        <span>Locally Sourced</span><span>·</span>
+        <span>Quiz Night</span><span>·</span>
+        <span>Burger Night</span><span>·</span>
+        <span>Coffee Afternoon</span><span>·</span>
         <span>Sunday Roasts</span><span>·</span>
         <span>Real Ales</span><span>·</span>
         <span>Dog Friendly</span><span>·</span>
         <span>Beer Garden</span><span>·</span>
-        <span>Open Fires</span><span>·</span>
       </div>
     </div>
   </section>
@@ -148,6 +150,36 @@
     </div>
   </section>
 
+  <!-- ================== WHAT'S ON ================== -->
+  <section class="events" id="events">
+    <div class="events__head">
+      <p class="eyebrow" data-reveal>What's On</p>
+      <h2 class="h2" data-reveal>Consistent nights<br/><em>at the pub.</em></h2>
+      <p class="events__intro" data-reveal>Regular events through the week. Good food, good company, no booking needed for most nights.</p>
+    </div>
+    <div class="events__grid">
+      <article class="events__card" data-reveal>
+        <p class="events__day">Every Wednesday · 12–3pm</p>
+        <h3 class="events__title">Coffee Afternoon</h3>
+        <p class="events__text">Drop in for a coffee and a catch-up. Free cake and biscuits while you're here.</p>
+      </article>
+      <article class="events__card events__card--accent" data-reveal>
+        <p class="events__day">Every Thursday</p>
+        <h3 class="events__title">Burger Night</h3>
+        <p class="events__text">Our full burger menu, skin-on fries included. See the Burger Night tab on our menu for the full line-up.</p>
+        <a href="#menu" class="events__link" data-tab-jump="burgers">View burgers →</a>
+      </article>
+      <article class="events__card" data-reveal>
+        <p class="events__day">3rd Tuesday of the month</p>
+        <h3 class="events__title">Quiz Night</h3>
+        <p class="events__text">Teams welcome. Ask at the bar for start times and details on the night.</p>
+      </article>
+    </div>
+    <p class="events__note" data-reveal>
+      <strong>Private hire:</strong> closed Monday and Tuesday to the public, but we take on private events day or evening. Call <a href="tel:+441869932495">01869 932495</a> to enquire.
+    </p>
+  </section>
+
   <!-- ================== MENU ================== -->
   <section class="menu" id="menu">
     <div class="menu__head">
@@ -161,8 +193,8 @@
 
       <div class="menu__tabs" role="tablist" data-reveal>
         <button class="menu__tab is-active" role="tab" aria-selected="true" data-tab="dinner">Dinner</button>
-        <button class="menu__tab" role="tab" aria-selected="false" data-tab="lunch">Lunch</button>
-        <button class="menu__tab" role="tab" aria-selected="false" data-tab="sunday">Sunday Roast</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-tab="burgers">Burger Night</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-tab="sunday">Sunday</button>
         <button class="menu__tab" role="tab" aria-selected="false" data-tab="kids">Children</button>
         <button class="menu__tab" role="tab" aria-selected="false" data-tab="dessert">Dessert &amp; Drinks</button>
       </div>
@@ -174,81 +206,62 @@
         <div class="menu__col">
           <h3 class="menu__cat">Starters</h3>
           <ul class="menu__list">
-            <li><div class="menu__row"><span class="menu__name">Honey &amp; Mustard Chipolatas</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Mustard mayonnaise &amp; leaves <em>(gfo, df)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Mushrooms on Toast</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Creamy garlic sauce on toasted sourdough <em>(v, gfo, vgo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Camembert <span class="menu__share">to share</span></span><span class="menu__dot"></span><span class="menu__price">£14</span></div><p class="menu__desc">Toasted sourdough &amp; onion chutney <em>(v, gfo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Buffalo Chicken Wings</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Spicy buffalo sauce, blue cheese dip &amp; leaves <em>(gf)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Smoked Salmon</span><span class="menu__dot"></span><span class="menu__price">£9</span></div><p class="menu__desc">Coriander, pink grapefruit &amp; olive oil</p></li>
-          </ul>
-
-          <h3 class="menu__cat">Burgers <span class="menu__cat-note">all with skin-on fries</span></h3>
-          <ul class="menu__list">
-            <li><div class="menu__row"><span class="menu__name">Classic Beef</span><span class="menu__dot"></span><span class="menu__price">£15</span></div><p class="menu__desc">Beef patty, lettuce, tomato, cheddar &amp; tomato relish <em>(gfo, dfo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Mushroom &amp; Halloumi</span><span class="menu__dot"></span><span class="menu__price">£14</span></div><p class="menu__desc">Portobello, halloumi, lettuce, tomato &amp; chilli jam <em>(v, gfo, dfo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Spring Chicken</span><span class="menu__dot"></span><span class="menu__price">£16</span></div><p class="menu__desc">Chicken breast, halloumi, avocado, lettuce, tomato &amp; mayo <em>(gfo, dfo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Furnace</span><span class="menu__dot"></span><span class="menu__price">£16</span></div><p class="menu__desc">Beef patty, mexicana cheese, lettuce, tomato, jalapeños &amp; chilli jam <em>(gfo, dfo)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Mushrooms on Toast</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Creamy garlic sauce on toasted sourdough <em>(v, gfo, vgo, dfo)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Camembert <span class="menu__share">to share</span></span><span class="menu__dot"></span><span class="menu__price">£17</span></div><p class="menu__desc">Toasted sourdough &amp; chutney <em>(v, gfo)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Teriyaki Salmon</span><span class="menu__dot"></span><span class="menu__price">£9</span></div><p class="menu__desc">With pak choi <em>(gf, df)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Chicken Wings</span><span class="menu__dot"></span><span class="menu__price">£9</span></div><p class="menu__desc">Mustard, ranch dressing, chillies, chives &amp; pea shoots <em>(gf)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Beetroot Terrine</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">With horseradish cream <em>(gf, v)</em></p></li>
           </ul>
         </div>
-
         <div class="menu__col">
           <h3 class="menu__cat">Mains</h3>
           <ul class="menu__list">
-            <li><div class="menu__row"><span class="menu__name">Fish &amp; Chips</span><span class="menu__dot"></span><span class="menu__price">£16</span></div><p class="menu__desc">Beer-battered cod, chunky chips, peas &amp; tartar sauce <em>(gf)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Rump Steak &amp; Tagliatelle</span><span class="menu__dot"></span><span class="menu__price">£17</span></div><p class="menu__desc">Mushrooms, spinach, fresh chillies &amp; garlic butter dressing</p></li>
-            <li><div class="menu__row"><span class="menu__name">8oz Ribeye</span><span class="menu__dot"></span><span class="menu__price">£24</span></div><p class="menu__desc">Chunky chips, peppercorn sauce, onion ring, fried tomato &amp; sautéed mushrooms <em>(gf)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Chicken Supreme</span><span class="menu__dot"></span><span class="menu__price">£19</span></div><p class="menu__desc">Pan-roasted with dauphinoise, shiitake, sautéed peas, chantenay carrots &amp; chestnut chicken sauce <em>(gf)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Lamb Wraps</span><span class="menu__dot"></span><span class="menu__price">£18</span></div><p class="menu__desc">Grilled leg steak, pomegranate glaze, tzatziki, pomegranate, red onion, parsley &amp; tomato salad with soft tortillas <em>(gfo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Beetroot &amp; Fennel Salad</span><span class="menu__dot"></span><span class="menu__price">£14</span></div><p class="menu__desc">Roasted beetroot, quinoa, fennel, avocado, walnuts, rocket, herbs &amp; lemon mustard dressing <em>(vg, gf)</em><br/><span class="menu__add">Add chicken £7 · halloumi £5</span></p></li>
-            <li><div class="menu__row"><span class="menu__name">Sea Bass &amp; Capers</span><span class="menu__dot"></span><span class="menu__price">£20</span></div><p class="menu__desc">Pan-fried fillets, sautéed baby potatoes, tenderstem broccoli &amp; lemon cream sauce</p></li>
+            <li><div class="menu__row"><span class="menu__name">Fish &amp; Chips</span><span class="menu__dot"></span><span class="menu__price">£18</span></div><p class="menu__desc">Beer battered with chunky chips, peas &amp; tartar sauce <em>(gf, df)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Rump Steak &amp; Tagliatelle</span><span class="menu__dot"></span><span class="menu__price">£20</span></div><p class="menu__desc">Mushrooms, spinach, fresh chillies &amp; garlic butter dressing</p></li>
+            <li><div class="menu__row"><span class="menu__name">Chicken Supreme</span><span class="menu__dot"></span><span class="menu__price">£20</span></div><p class="menu__desc">Oyster mushrooms, chicken sauce, black pudding, asparagus &amp; baked butternut squash <em>(gf)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Duck Breast</span><span class="menu__dot"></span><span class="menu__price">£21</span></div><p class="menu__desc">Potato &amp; fennel gratin, blackberries, red wine sauce, pear purée &amp; kale <em>(gf)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Hake</span><span class="menu__dot"></span><span class="menu__price">£18</span></div><p class="menu__desc">Red pepper beurre blanc, crispy shallot, coriander oil, carrots &amp; fondant potato <em>(gf)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Mushroom Gnocchi</span><span class="menu__dot"></span><span class="menu__price">£17</span></div><p class="menu__desc">Sautéed wild mushrooms, potato gnocchi, chard &amp; blue cheese sauce</p></li>
           </ul>
-
-          <h3 class="menu__cat">Sides <span class="menu__cat-note">all £4</span></h3>
+          <h3 class="menu__cat">Sides</h3>
           <ul class="menu__sides">
-            <li>Chunky chips <em>(gf)</em></li>
-            <li>Side salad <em>(gf, vg)</em></li>
-            <li>Onion rings <em>(gf)</em></li>
-            <li>Mac 'n' cheese</li>
-            <li>Garlic flatbread <em>(v)</em></li>
-            <li>Skin-on fries <em>(gf)</em></li>
+            <li>Chunky chips <em>(gf)</em> £4.50</li>
+            <li>Side salad <em>(gf)</em> £4.50</li>
+            <li>Onion rings <em>(gf)</em> £4.50</li>
+            <li>Mac 'n' cheese <em>(v)</em> £5</li>
+            <li>Garlic bread <em>(v)</em> £4.50</li>
+            <li>Skin-on fries <em>(gf)</em> £4.50</li>
+            <li>Battered halloumi <em>(gf)</em> £6</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- LUNCH -->
-    <div class="menu__panel" data-panel="lunch">
+    <!-- BURGER NIGHT -->
+    <div class="menu__panel" data-panel="burgers">
+      <p class="menu__desc menu__desc--feature menu__desc--center">
+        <strong>Every Thursday is Burger Night.</strong> All burgers served with skin-on fries.
+      </p>
       <div class="menu__cols">
         <div class="menu__col">
-          <h3 class="menu__cat">Paninis <span class="menu__cat-note">with fries &amp; side salad</span></h3>
+          <h3 class="menu__cat">Burgers</h3>
           <ul class="menu__list">
-            <li><div class="menu__row"><span class="menu__name">Grilled Halloumi</span><span class="menu__dot"></span><span class="menu__price">£9</span></div><p class="menu__desc">Roasted peppers, courgette &amp; harissa mayo <em>(gfo, vgo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Chipolatas</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Caramelised onions <em>(gfo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Brie &amp; Bacon</span><span class="menu__dot"></span><span class="menu__price">£9</span></div><p class="menu__desc">Cranberry sauce <em>(gfo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Chicken</span><span class="menu__dot"></span><span class="menu__price">£10</span></div><p class="menu__desc">Grilled breast, lettuce, tomato &amp; basil pesto <em>(gfo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Fish</span><span class="menu__dot"></span><span class="menu__price">£9</span></div><p class="menu__desc">Pan-fried pollack, pink grapefruit mayo &amp; lettuce <em>(gfo)</em></p></li>
-          </ul>
-
-          <h3 class="menu__cat">Open Sandwiches</h3>
-          <ul class="menu__list">
-            <li><div class="menu__row"><span class="menu__name">Smashed Avocado &amp; Prosciutto</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Fresh chillies, pumpkin seeds &amp; rocket on toasted sourdough <em>(gfo, vg-option)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Fried Egg, Watercress &amp; Gruyère</span><span class="menu__dot"></span><span class="menu__price">£9</span></div><p class="menu__desc">Toasted sourdough <em>(gfo)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Smokey Pub Burger</span><span class="menu__dot"></span><span class="menu__price">£15</span></div><p class="menu__desc">Beef patty, smoked bacon, BBQ sauce &amp; applewood cheese <em>(gfo, dfo)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Spring Chicken</span><span class="menu__dot"></span><span class="menu__price">£16</span></div><p class="menu__desc">Chicken breast, halloumi, lettuce, tomato, avocado &amp; mayonnaise <em>(gfo, dfo)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Meat Your Maker</span><span class="menu__dot"></span><span class="menu__price">£20</span></div><p class="menu__desc">Two beef patties, bacon, chipolatas, melted cheddar, pickles &amp; burger relish <em>(gfo, dfo)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Falafel It All</span><span class="menu__dot"></span><span class="menu__price">£14</span></div><p class="menu__desc">Falafel, lettuce, tomato, spicy slaw &amp; sriracha sauce <em>(df, gfo, v)</em></p></li>
           </ul>
         </div>
         <div class="menu__col">
-          <h3 class="menu__cat">Lunch Mains</h3>
-          <ul class="menu__list">
-            <li><div class="menu__row"><span class="menu__name">Fish &amp; Chips</span><span class="menu__dot"></span><span class="menu__price">£16</span></div><p class="menu__desc">Beer-battered cod, chunky chips, peas &amp; tartar sauce <em>(gf)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Rump Steak &amp; Tagliatelle</span><span class="menu__dot"></span><span class="menu__price">£17</span></div><p class="menu__desc">Mushrooms, spinach, fresh chillies &amp; garlic butter dressing</p></li>
-            <li><div class="menu__row"><span class="menu__name">Lamb Wraps</span><span class="menu__dot"></span><span class="menu__price">£18</span></div><p class="menu__desc">Grilled leg steak, pomegranate glaze, tzatziki, pomegranate, red onion, parsley &amp; tomato salad <em>(gfo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Beetroot &amp; Fennel Salad</span><span class="menu__dot"></span><span class="menu__price">£14</span></div><p class="menu__desc">Roasted beetroot, quinoa, fennel, avocado, walnuts, rocket &amp; lemon mustard dressing <em>(vg, gf)</em><br/><span class="menu__add">Add chicken £7 · halloumi £5</span></p></li>
-          </ul>
-
-          <h3 class="menu__cat">Burgers</h3>
-          <ul class="menu__list">
-            <li><div class="menu__row"><span class="menu__name">Classic Beef</span><span class="menu__dot"></span><span class="menu__price">£15</span></div><p class="menu__desc">Beef patty, lettuce, tomato, cheddar &amp; tomato relish</p></li>
-            <li><div class="menu__row"><span class="menu__name">Mushroom &amp; Halloumi</span><span class="menu__dot"></span><span class="menu__price">£14</span></div><p class="menu__desc">Portobello, halloumi, lettuce, tomato &amp; chilli jam</p></li>
-            <li><div class="menu__row"><span class="menu__name">Spring Chicken</span><span class="menu__dot"></span><span class="menu__price">£16</span></div><p class="menu__desc">Chicken breast, halloumi, avocado, lettuce, tomato &amp; mayo</p></li>
-            <li><div class="menu__row"><span class="menu__name">Furnace</span><span class="menu__dot"></span><span class="menu__price">£16</span></div><p class="menu__desc">Beef patty, mexicana, lettuce, tomato, jalapeños &amp; chilli jam</p></li>
+          <h3 class="menu__cat">Sides</h3>
+          <ul class="menu__sides">
+            <li>Chunky chips <em>(gf)</em> £4.50</li>
+            <li>Side salad <em>(gf)</em> £4.50</li>
+            <li>Onion rings <em>(gf)</em> £4.50</li>
+            <li>Mac 'n' cheese <em>(v)</em> £5</li>
+            <li>Garlic bread <em>(v)</em> £4.50</li>
+            <li>Skin-on fries <em>(gf)</em> £4.50</li>
+            <li>Battered halloumi <em>(gf)</em> £6</li>
           </ul>
         </div>
       </div>
@@ -258,34 +271,40 @@
     <div class="menu__panel" data-panel="sunday">
       <div class="menu__cols">
         <div class="menu__col">
-          <h3 class="menu__cat">Sunday Starters</h3>
+          <h3 class="menu__cat">Starters</h3>
           <ul class="menu__list">
-            <li><div class="menu__row"><span class="menu__name">Honey &amp; Mustard Chipolatas</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Mustard mayonnaise &amp; leaves <em>(gfo, df)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Mushrooms on Toast</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Creamy garlic sauce on toasted sourdough <em>(v, gfo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Camembert to share</span><span class="menu__dot"></span><span class="menu__price">£14</span></div><p class="menu__desc">Toasted sourdough &amp; onion chutney</p></li>
-            <li><div class="menu__row"><span class="menu__name">Buffalo Chicken Wings</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Blue cheese dip &amp; leaves <em>(gf)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Soup of the Week</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Served with crusty bread, please ask staff <em>(vgo, gfo, dfo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Mackerel</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Pan-fried with watercress, radish &amp; beetroot horseradish purée <em>(gf)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Mushrooms on Toast</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Creamy garlic sauce on toasted sourdough <em>(v, gfo, vgo)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Camembert <span class="menu__share">to share</span></span><span class="menu__dot"></span><span class="menu__price">£17</span></div><p class="menu__desc">Toasted sourdough &amp; onion chutney <em>(v, gfo)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Teriyaki Salmon</span><span class="menu__dot"></span><span class="menu__price">£9</span></div><p class="menu__desc">With pak choi <em>(gf)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Beetroot Terrine</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">With horseradish cream</p></li>
+            <li><div class="menu__row"><span class="menu__name">Chicken Wings</span><span class="menu__dot"></span><span class="menu__price">£9</span></div><p class="menu__desc">Mustard, ranch dressing, chillies, chives &amp; pea shoots</p></li>
+          </ul>
+          <h3 class="menu__cat">Burgers <span class="menu__cat-note">with skin-on fries</span></h3>
+          <ul class="menu__list">
+            <li><div class="menu__row"><span class="menu__name">Smokey Pub Burger</span><span class="menu__dot"></span><span class="menu__price">£15</span></div><p class="menu__desc">Beef patty, smoked bacon, BBQ sauce &amp; applewood cheese</p></li>
+            <li><div class="menu__row"><span class="menu__name">Classic Chicken</span><span class="menu__dot"></span><span class="menu__price">£15</span></div><p class="menu__desc">Chicken breast, melted cheddar, lettuce, tomato &amp; mayonnaise <em>(gfo)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Meat Your Maker</span><span class="menu__dot"></span><span class="menu__price">£20</span></div><p class="menu__desc">Two beef patties, bacon, chipolatas, melted cheddar, pickles &amp; burger relish</p></li>
+            <li><div class="menu__row"><span class="menu__name">Falafel It All</span><span class="menu__dot"></span><span class="menu__price">£14</span></div><p class="menu__desc">Falafel, lettuce, tomato, spicy slaw &amp; sriracha sauce</p></li>
           </ul>
         </div>
         <div class="menu__col">
-          <h3 class="menu__cat">The Roasts <span class="menu__cat-note">with all the trimmings</span></h3>
+          <h3 class="menu__cat">Roasts <span class="menu__cat-note">with all the trimmings</span></h3>
           <p class="menu__desc menu__desc--feature">
-            Roast potatoes, onion purée, kale, honey roasted carrots, parsnips,
-            sautéed green beans, Yorkshire pudding, brussels &amp; bacon, gravy <em>(gfo)</em>
+            Parsnip, carrot, kale, Yorkshire pudding, onion purée, green beans, potatoes, brussels &amp; bacon &amp; gravy
           </p>
           <ul class="menu__list">
-            <li><div class="menu__row"><span class="menu__name">Sirloin of Beef</span><span class="menu__dot"></span><span class="menu__price">£19</span></div></li>
-            <li><div class="menu__row"><span class="menu__name">Chicken Supreme</span><span class="menu__dot"></span><span class="menu__price">£19</span></div></li>
-            <li><div class="menu__row"><span class="menu__name">Leg of Lamb</span><span class="menu__dot"></span><span class="menu__price">£17</span></div></li>
+            <li><div class="menu__row"><span class="menu__name">Sirloin of Beef</span><span class="menu__dot"></span><span class="menu__price">£24</span></div></li>
+            <li><div class="menu__row"><span class="menu__name">Leg of Lamb</span><span class="menu__dot"></span><span class="menu__price">£21</span></div></li>
+            <li><div class="menu__row"><span class="menu__name">Chicken Supreme</span><span class="menu__dot"></span><span class="menu__price">£20</span></div></li>
             <li><div class="menu__row"><span class="menu__name">Nut Roast</span><span class="menu__dot"></span><span class="menu__price">£16</span></div><p class="menu__desc">Vegetarian</p></li>
           </ul>
-
           <h3 class="menu__cat">Other Mains</h3>
           <ul class="menu__list">
-            <li><div class="menu__row"><span class="menu__name">Fish &amp; Chips</span><span class="menu__dot"></span><span class="menu__price">£16</span></div></li>
-            <li><div class="menu__row"><span class="menu__name">Hake Supreme</span><span class="menu__dot"></span><span class="menu__price">£24</span></div><p class="menu__desc">Pan-fried with leeks, toasted almonds, asparagus, fondant potato &amp; lemon beurre blanc <em>(gf)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Beetroot &amp; Fennel Salad</span><span class="menu__dot"></span><span class="menu__price">£14</span></div><p class="menu__desc">Add mackerel £7 · chicken £7 · halloumi £5</p></li>
+            <li><div class="menu__row"><span class="menu__name">Rump Steak &amp; Tagliatelle</span><span class="menu__dot"></span><span class="menu__price">£20</span></div><p class="menu__desc">Mushrooms, spinach, fresh chillies &amp; garlic butter dressing</p></li>
+            <li><div class="menu__row"><span class="menu__name">Fish &amp; Chips</span><span class="menu__dot"></span><span class="menu__price">£18</span></div><p class="menu__desc">Beer battered with chunky chips, peas &amp; tartar sauce <em>(gf)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Duck Breast</span><span class="menu__dot"></span><span class="menu__price">£21</span></div><p class="menu__desc">Potato &amp; fennel gratin, blackberries, red wine sauce, pear purée &amp; kale <em>(gf)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Hake</span><span class="menu__dot"></span><span class="menu__price">£18</span></div><p class="menu__desc">Red pepper beurre blanc, crispy shallot, coriander oil, carrots &amp; fondant potato <em>(gf)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Mushroom Gnocchi</span><span class="menu__dot"></span><span class="menu__price">£17</span></div><p class="menu__desc">Sautéed wild mushrooms, potato gnocchi, chard &amp; blue cheese sauce</p></li>
           </ul>
         </div>
       </div>
@@ -297,11 +316,11 @@
         <div class="menu__col">
           <h3 class="menu__cat">Children's Mains <span class="menu__cat-note">up to 11yrs</span></h3>
           <ul class="menu__list">
-            <li><div class="menu__row"><span class="menu__name">Beef Burger</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Beef patty, melted cheddar, ketchup &amp; fries <em>(gfo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Fish &amp; Chips</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">With peas <em>(gf)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Chicken Burger</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Melted cheddar, mayonnaise &amp; fries <em>(gfo)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Chipolatas</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">With beans &amp; chips <em>(gf)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Mac &amp; Cheese</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">With garlic bread &amp; vegetable sticks</p></li>
+            <li><div class="menu__row"><span class="menu__name">Beef Burger</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Beef patty, melted cheddar, ketchup &amp; fries <em>(gfo, dfo)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Fish &amp; Chips</span><span class="menu__dot"></span><span class="menu__price">£9</span></div><p class="menu__desc">With peas <em>(gf, df)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Chicken Burger</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Melted cheddar, mayonnaise &amp; fries <em>(gfo, dfo)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Chipolatas</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">With beans &amp; chips <em>(gf, df)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Mac &amp; Cheese</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">With garlic bread &amp; vegetable sticks <em>(v)</em></p></li>
           </ul>
         </div>
         <div class="menu__col">
@@ -309,8 +328,7 @@
           <ul class="menu__list">
             <li><div class="menu__row"><span class="menu__name">Warm Chocolate Brownie</span><span class="menu__dot"></span><span class="menu__price">£5</span></div><p class="menu__desc">Chocolate sauce &amp; vanilla ice cream <em>(gf)</em></p></li>
             <li><div class="menu__row"><span class="menu__name">Sticky Toffee Pudding</span><span class="menu__dot"></span><span class="menu__price">£5</span></div><p class="menu__desc">Toffee sauce &amp; vanilla ice cream</p></li>
-            <li><div class="menu__row"><span class="menu__name">Apple Crumble</span><span class="menu__dot"></span><span class="menu__price">£5</span></div><p class="menu__desc">Walnut crumble &amp; vanilla ice cream</p></li>
-            <li><div class="menu__row"><span class="menu__name">Ice Creams</span><span class="menu__dot"></span><span class="menu__price">£2</span></div><p class="menu__desc">Chocolate, vanilla, honeycomb, strawberry, salted caramel &amp; mint choc chip</p></li>
+            <li><div class="menu__row"><span class="menu__name">Ice Creams</span><span class="menu__dot"></span><span class="menu__price">£2</span></div><p class="menu__desc">Chocolate, vanilla, strawberry &amp; mint choc chip</p></li>
           </ul>
         </div>
       </div>
@@ -322,24 +340,40 @@
         <div class="menu__col">
           <h3 class="menu__cat">Desserts</h3>
           <ul class="menu__list">
-            <li><div class="menu__row"><span class="menu__name">Sticky Toffee Pudding</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Toffee sauce &amp; vanilla ice cream</p></li>
-            <li><div class="menu__row"><span class="menu__name">Warm Chocolate Brownie</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Chocolate sauce &amp; vanilla ice cream <em>(gf)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Apple Crumble</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Walnut crumble with vegan ice cream <em>(vg, gf)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Lemon Panna Cotta</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Raspberry sauce &amp; macadamia nut shortbread <em>(gf)</em></p></li>
-            <li><div class="menu__row"><span class="menu__name">Scoop of Ice Cream</span><span class="menu__dot"></span><span class="menu__price">£2</span></div><p class="menu__desc">Vanilla, mint choc chip, salted caramel, strawberry, honeycomb, chocolate</p></li>
+            <li><div class="menu__row"><span class="menu__name">Sticky Toffee Pudding</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Toffee sauce &amp; vanilla ice cream <em>(gf)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Chocolate Brownie</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Chocolate sauce &amp; vanilla ice cream <em>(gf, vgo)</em></p></li>
+            <li><div class="menu__row"><span class="menu__name">Crème Brûlée Trio</span><span class="menu__dot"></span><span class="menu__price">£10</span></div><p class="menu__desc">Baileys, cherry &amp; espresso</p></li>
+            <li><div class="menu__row"><span class="menu__name">Scoop of Ice Cream</span><span class="menu__dot"></span><span class="menu__price">£2</span></div></li>
+          </ul>
+          <h3 class="menu__cat">Cocktails</h3>
+          <ul class="menu__list">
+            <li><div class="menu__row"><span class="menu__name">Pornstar Martini</span><span class="menu__dot"></span><span class="menu__price">£11</span></div><p class="menu__desc">Vodka, passionfruit &amp; prosecco</p></li>
+            <li><div class="menu__row"><span class="menu__name">Dark &amp; Stormy</span><span class="menu__dot"></span><span class="menu__price">£8</span></div><p class="menu__desc">Dark rum, ginger beer &amp; lime</p></li>
+            <li><div class="menu__row"><span class="menu__name">Negroni</span><span class="menu__dot"></span><span class="menu__price">£9</span></div><p class="menu__desc">Gordon's gin, Campari, Martini Rosso</p></li>
           </ul>
         </div>
         <div class="menu__col">
-          <h3 class="menu__cat">After Dinner Drinks</h3>
+          <h3 class="menu__cat">Whisky <span class="menu__cat-note">25ml</span></h3>
+          <ul class="menu__list">
+            <li><div class="menu__row"><span class="menu__name">Cotswolds Single Malt</span><span class="menu__dot"></span><span class="menu__price">£6.50</span></div></li>
+            <li><div class="menu__row"><span class="menu__name">Johnnie Walker Black Label</span><span class="menu__dot"></span><span class="menu__price">£4.90</span></div></li>
+            <li><div class="menu__row"><span class="menu__name">Talisker 10yo</span><span class="menu__dot"></span><span class="menu__price">£5.30</span></div></li>
+            <li><div class="menu__row"><span class="menu__name">Jura 10yo</span><span class="menu__dot"></span><span class="menu__price">£6.20</span></div></li>
+          </ul>
+          <h3 class="menu__cat">Hot Drinks</h3>
           <ul class="menu__list">
             <li><div class="menu__row"><span class="menu__name">Cafetière of Coffee</span><span class="menu__dot"></span><span class="menu__price">£3.50</span></div><p class="menu__desc">Regular or decaf</p></li>
-            <li><div class="menu__row"><span class="menu__name">Pot of Tea</span><span class="menu__dot"></span><span class="menu__price">£3.50</span></div><p class="menu__desc">English breakfast, Earl Grey, decaf, peppermint, green &amp; lemon &amp; ginger</p></li>
-            <li><div class="menu__row"><span class="menu__name">Feuerheerd's Port 2017 LBV</span><span class="menu__dot"></span><span class="menu__price">£4.50</span></div><p class="menu__desc">50ml</p></li>
-            <li><div class="menu__row"><span class="menu__name">Feuerheerd's Port 2003 Vintage</span><span class="menu__dot"></span><span class="menu__price">£8.20</span></div><p class="menu__desc">50ml</p></li>
-            <li><div class="menu__row"><span class="menu__name">Cotswolds Single Malt Whiskey</span><span class="menu__dot"></span><span class="menu__price">£6.20</span></div><p class="menu__desc">25ml</p></li>
-            <li><div class="menu__row"><span class="menu__name">Bulleit Bourbon</span><span class="menu__dot"></span><span class="menu__price">£5</span></div><p class="menu__desc">25ml</p></li>
-            <li><div class="menu__row"><span class="menu__name">Bailey's</span><span class="menu__dot"></span><span class="menu__price">£4.90</span></div><p class="menu__desc">50ml</p></li>
+            <li><div class="menu__row"><span class="menu__name">Pot of Tea</span><span class="menu__dot"></span><span class="menu__price">£3.50</span></div><p class="menu__desc">English breakfast, Earl Grey, decaf, peppermint, lemon &amp; ginger, green</p></li>
+            <li><div class="menu__row"><span class="menu__name">Hot Chocolate</span><span class="menu__dot"></span><span class="menu__price">£3.50</span></div><p class="menu__desc">With whipped cream &amp; chocolate sprinkles</p></li>
           </ul>
+          <h3 class="menu__cat">Digestif</h3>
+          <ul class="menu__list">
+            <li><div class="menu__row"><span class="menu__name">Vintage Port</span><span class="menu__dot"></span><span class="menu__price">£8.20</span></div><p class="menu__desc">50ml</p></li>
+            <li><div class="menu__row"><span class="menu__name">Bailey's</span><span class="menu__dot"></span><span class="menu__price">£4.90</span></div><p class="menu__desc">50ml</p></li>
+            <li><div class="menu__row"><span class="menu__name">Limoncello</span><span class="menu__dot"></span><span class="menu__price">£3.80</span></div><p class="menu__desc">25ml</p></li>
+          </ul>
+          <h3 class="menu__cat">Hot Drinks With a Kick</h3>
+          <p class="menu__desc">Hot chocolate or coffee with whipped cream, chocolate sprinkles &amp; 25ml spirit. Jameson £8 · Tia Maria £7 · Bailey's £7 · Kraken Spiced Rum £8</p>
         </div>
       </div>
     </div>
@@ -406,10 +440,10 @@
           <h3>Opening Hours</h3>
           <table class="hours">
             <tbody>
-              <tr><th>Monday</th><td>Closed</td></tr>
-              <tr><th>Tuesday</th><td>6pm – 10pm <span>drinks only</span></td></tr>
+              <tr><th>Monday</th><td>Closed <span>private events available</span></td></tr>
+              <tr><th>Tuesday</th><td>Closed <span>private events available</span></td></tr>
               <tr><th>Wednesday</th><td>12 – 3, 6 – 10 <span>food 12 – 2, 6 – 8.30</span></td></tr>
-              <tr><th>Thursday</th><td>12 – 3, 6 – 10 <span>food 12 – 2, 6 – 8.30</span></td></tr>
+              <tr><th>Thursday</th><td>12 – 3, 6 – 10 <span>food 12 – 2, 6 – 8.30 · burger night</span></td></tr>
               <tr><th>Friday</th><td>12 – 3, 5 – 11 <span>food 12 – 2, 5 – 8.30</span></td></tr>
               <tr><th>Saturday</th><td>12 – 11 <span>food 12 – 8.30</span></td></tr>
               <tr><th>Sunday</th><td>12 – 10 <span>food 12 – 4</span></td></tr>
