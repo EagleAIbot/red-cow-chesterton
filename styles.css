@@ -452,9 +452,34 @@ section { position: relative; }
   background: var(--c-bone);
   border: 1px solid var(--c-line);
   border-radius: var(--radius-lg);
-  padding: 1.75rem 1.85rem;
+  padding: 0;
+  overflow: hidden;
   box-shadow: 0 12px 32px -20px rgba(31, 45, 29, 0.2);
 }
+.events__card > :not(.events__img) {
+  padding-left: 1.85rem;
+  padding-right: 1.85rem;
+}
+.events__card > .events__day { padding-top: 1.75rem; margin-top: 0; }
+.events__card > .events__text:last-child,
+.events__card > .events__link:last-child { padding-bottom: 1.75rem; }
+.events__card > .events__text + .events__link { padding-bottom: 1.75rem; }
+.events__card:not(:has(.events__img)) {
+  padding: 1.75rem 1.85rem;
+}
+.events__card:not(:has(.events__img)) > .events__day { padding-top: 0; }
+.events__img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--c-line);
+}
+.events__text a {
+  color: var(--c-cognac);
+  border-bottom: 1px solid rgba(182, 114, 45, 0.45);
+}
+.events__text a:hover { color: var(--c-forest); }
 .events__card--accent {
   border-color: rgba(182, 114, 45, 0.35);
   background: linear-gradient(180deg, var(--c-bone), rgba(182, 114, 45, 0.08));
