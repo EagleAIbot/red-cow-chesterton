@@ -900,8 +900,29 @@ section { position: relative; }
   color: var(--c-bone);
 }
 .social__card--ig {
-  background: linear-gradient(145deg, var(--c-bone), rgba(31, 45, 29, 0.06));
-  border: 1px solid var(--c-line);
+  position: relative;
+  overflow: hidden;
+  color: var(--c-bone);
+  border: none;
+}
+.social__card--ig::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: url('assets/img/coffee-afternoon.jpg') center / cover no-repeat;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+.social__card--ig::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(31,45,29,0.92), rgba(31,45,29,0.78));
+  z-index: 1;
+}
+.social__card--ig > * {
+  position: relative;
+  z-index: 2;
 }
 .social__card-kicker {
   margin: 0 0 0.75rem;
