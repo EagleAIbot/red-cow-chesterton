@@ -18,9 +18,10 @@
       ? `https://www.instagram.com/${SOCIAL.instagramHandle}/`
       : 'https://www.instagram.com/');
 
-    if (follow && SOCIAL.instagramHandle) {
+    if (follow) {
       follow.href = url;
       follow.hidden = false;
+      follow.classList.remove('social__follow--soon');
     }
 
     if (embed && SOCIAL.instagramEmbedSrc) {
@@ -33,22 +34,22 @@
           allowtransparency="true"
           frameborder="0"
           scrolling="no"></iframe>`;
-    } else if (embed && SOCIAL.instagramHandle) {
-      embed.querySelector('.social__placeholder-text').textContent =
-        'Our Instagram feed is being connected. Follow us for the latest photos and updates.';
-      if (follow) follow.classList.remove('social__follow--soon');
+    } else {
+      const placeholderText = embed?.querySelector('.social__placeholder-text');
+      if (placeholderText) {
+        placeholderText.textContent =
+          'Our Instagram feed is being connected. Follow us for the latest photos and updates.';
+      }
     }
 
-    if (SOCIAL.instagramHandle) {
-      document.querySelectorAll('.visit__social--soon').forEach(el => {
-        el.href = url;
-        el.classList.remove('visit__social--soon');
-        el.target = '_blank';
-        el.rel = 'noopener noreferrer';
-        el.style.pointerEvents = '';
-        el.style.opacity = '';
-      });
-    }
+    document.querySelectorAll('.visit__social--soon').forEach(el => {
+      el.href = url;
+      el.classList.remove('visit__social--soon');
+      el.target = '_blank';
+      el.rel = 'noopener noreferrer';
+      el.style.pointerEvents = '';
+      el.style.opacity = '';
+    });
   }
 
   /* --- year stamp --- */
