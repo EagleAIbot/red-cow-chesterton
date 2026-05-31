@@ -6,17 +6,17 @@
 /* --- social config (update Instagram when live) --- */
   const SOCIAL = {
     facebook: 'https://www.facebook.com/people/The-RED-COW/61564161263680/',
-    instagramHandle: '',
-    // Paste SnapWidget or Behold embed URL here once Instagram is live
+    instagram: 'https://www.instagram.com/redcowchesterton/',
+    instagramHandle: 'redcowchesterton',
     instagramEmbedSrc: '',
   };
 
   if (SOCIAL.instagramHandle || SOCIAL.instagramEmbedSrc) {
     const follow = document.getElementById('instagramFollow');
     const embed = document.getElementById('instagramEmbed');
-    const url = SOCIAL.instagramHandle
+    const url = SOCIAL.instagram || (SOCIAL.instagramHandle
       ? `https://www.instagram.com/${SOCIAL.instagramHandle}/`
-      : 'https://www.instagram.com/';
+      : 'https://www.instagram.com/');
 
     if (follow && SOCIAL.instagramHandle) {
       follow.href = url;

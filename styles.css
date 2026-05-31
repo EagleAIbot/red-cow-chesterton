@@ -896,6 +896,10 @@ section { position: relative; }
     url('assets/img/pub-2.jpg') center / cover no-repeat;
   color: var(--c-bone);
 }
+.social__card--ig {
+  background: linear-gradient(145deg, var(--c-bone), rgba(31, 45, 29, 0.06));
+  border: 1px solid var(--c-line);
+}
 .social__card-kicker {
   margin: 0 0 0.75rem;
   font-size: 0.72rem;
