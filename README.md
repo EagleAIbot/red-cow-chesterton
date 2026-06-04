@@ -94,7 +94,7 @@ Configured in `script.js` → `SOCIAL` object:
 | `coffee-afternoon.jpg` | What's On + Instagram social card bg |
 | `quiz-poster.png` | What's On quiz card |
 | `extra.jpg` | Spare |
-| `gallery/pub-01.jpg` … `pub-08.jpg` | Gallery carousel |
+| `gallery/pub-01.jpg` … `pub-07.jpg` | Gallery carousel |
 | `gallery/burger-night.jpg` | Burger night card (burgers + fries, from Dropbox `Photo 28-05-2026, 20 27 15.jpg`) |
 | `pub-video.mov` | Walkthrough video under gallery (`PUB_VIDEO` in `script.js`) |
 
