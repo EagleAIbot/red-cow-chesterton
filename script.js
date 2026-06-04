@@ -11,7 +11,7 @@
     instagramEmbedSrc: '',
   };
 
-  const PUB_VIDEO = 'assets/img/pub-video.mov';
+
 
   if (SOCIAL.instagramHandle || SOCIAL.instagramEmbedSrc) {
     const follow = document.getElementById('instagramFollow');
@@ -153,20 +153,6 @@
       timer = setInterval(() => goTo(index + 1), 6000);
     };
     resetTimer();
-  }
-
-  /* --- pub video (shows when file exists) --- */
-  const videoWrap = document.getElementById('pubVideoWrap');
-  const videoSrc  = document.getElementById('pubVideoSource');
-  if (PUB_VIDEO && videoWrap && videoSrc) {
-    fetch(PUB_VIDEO, { method: 'HEAD' })
-      .then((res) => {
-        if (!res.ok) return;
-        videoSrc.src = PUB_VIDEO;
-        videoSrc.type = PUB_VIDEO.endsWith('.mov') ? 'video/quicktime' : 'video/mp4';
-        videoWrap.hidden = false;
-      })
-      .catch(() => {});
   }
 
   /* --- reveal on scroll --- */
