@@ -90,7 +90,7 @@ Configured in `script.js` → `SOCIAL` object:
 | `logo.png` | Nav + footer (Anthony's TRC logo) |
 | `hero.jpg` | About section vintage photo |
 | `pub-1.jpg` | Hero background, OG image |
-| `pub-2.jpg` | Bar section, Facebook social card bg |
+| `pub-2.jpg` | Bar section, Facebook social card bg (updated Jun 2026; swap when Anthony sends newer shot) |
 | `coffee-afternoon.jpg` | What's On + Instagram social card bg |
 | `quiz-poster.png` | What's On quiz card |
 | `extra.jpg` | Spare |
