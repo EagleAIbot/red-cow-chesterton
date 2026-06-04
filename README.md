@@ -95,7 +95,7 @@ Configured in `script.js` → `SOCIAL` object:
 | `quiz-poster.png` | What's On quiz card |
 | `extra.jpg` | Spare |
 | `gallery/pub-01.jpg` … `pub-08.jpg` | Gallery carousel |
-| `gallery/burger-night.jpg` | Burger night card |
+| `gallery/burger-night.jpg` | Burger night card (burgers + fries, from Dropbox `Photo 28-05-2026, 20 27 15.jpg`) |
 | `pub-video.mov` | Walkthrough video under gallery (`PUB_VIDEO` in `script.js`) |
 
 **Dropbox photos:** https://www.dropbox.com/scl/fo/hbrq2dq8rn9tlwnsbv5gx/ADMq3v4YsV_za7zGw5ryZi8?rlkey=9xk7gxagkjt7rrn7kushgdake — Dropbox stars are not visible without login; ask Anthony for starred filenames to swap into `gallery/`.
